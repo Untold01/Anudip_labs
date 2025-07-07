@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Purchase</title>
+    <style>
+         body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    #container {
+      width: 700px;
+      margin: auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid black;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    img {
+      margin-top: 5px;
+    }
+
+    input[type="number"] {
+      width: 60px;
+      padding: 4px;
+    }
+
+    .btn {
+      margin-top: 15px;
+      padding: 10px 15px;
+      width: 100%;
+      font-size: 16px;
+      background-color:chartreuse;
+      color: black;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .btn:hover {
+      cursor: pointer;
+    }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <h2 align="center">Products List</h2>
+        <form action="">
+            <table align="center">
+                <tr>
+                    <th>Products</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <strong>Onions</strong><br>
+                        <img src="onions.jpeg" alt="Onions" height="50" width="80">
+                    </td>
+                    <td>
+                        Rs. 40/Kg
+                    </td>
+                    <td>
+                        <input type="number" name="onions_qty" min="0">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <strong>Tomatoes</strong><br>
+                        <img src="Tomato_je.jpg" alt="Tomatoes" height="50" width="80">
+                    </td>
+                    <td>
+                        Rs. 50/Kg
+                    </td>
+                    <td>
+                        <input type="number" name="tomatoes_qty" min="0">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <strong>Garlic</strong><br>
+                        <img src="Garlic.avif" alt="Garlic" height="50" width="80">
+                    </td>
+                    <td>
+                        Rs. 150/Kg
+                    </td>
+                    <td>
+                        <input type="number" name="garlic_qty" min="0">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <strong>Paneer</strong><br>
+                        <img src="paneer.jpg" alt="Paneer" height="50" width="80">
+                    </td>
+                    <td>
+                        Rs. 160/Kg
+                    </td>
+                    <td>
+                        <input type="number" name="paneer_qty" min="0">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <strong>Corn</strong><br>
+                        <img src="cornkernels.webp" alt="Corn" height="50" width="80">
+                    </td>
+                    <td>
+                        Rs. 40/Pc
+                    </td>
+                    <td>
+                        <input type="number" name="corn_qty" min="0">
+                    </td>
+                </tr>
+            </table>
+
+            <button type="button" class="btn">Calculate Total Price</button>
+        </form>
+    </div>
+</body>
+
+</html>

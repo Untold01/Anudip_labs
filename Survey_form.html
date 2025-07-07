@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f0f0;
+        }
+
+        header {
+            font-size: 24px;
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        div {
+            width: 700px;
+            padding: 30px;
+            margin: 50px auto;
+            border: 1px solid transparent;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        #name, #email, #age, #feedback{
+            width: 95%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        textarea {
+            height: 80px;
+            resize: vertical;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+            margin-left: 10px;
+        }
+
+        #submit {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background-color: #0056b3;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <form action="">
+            <table align="center">
+                <header align="center">Survey Form</header>
+                <tr>
+                    <td><strong>Name :</strong></td>
+                <tr>
+                    <td>
+                        <input type="text" name="" id="name" size="40">
+                    </td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Email :</strong>
+                    </td>
+                <tr>
+                    <td>
+                        <input type="email" name="email" id="email" size="40">
+                    </td>
+                </tr>
+
+                </tr>
+                <tr>
+                    <td>
+                        <strong>
+                            Age :
+                        </strong>
+                    </td>
+                <tr>
+                    <td>
+                        <input type="number" id="age">
+                    </td>
+                </tr>
+
+                </tr>
+                <tr>
+                    <td>
+                        <strong>
+                            ▪️Would you recommend this survey form for your friend?
+                        </strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea name="feedback" id="feedback"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>
+                            Languages & Frameworks Known :
+                        </strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="" id=""> React.js
+                        <input type="checkbox" name="" id=""> Javascript
+                        <input type="checkbox" name="" id=""> Python
+                        <input type="checkbox" name="" id=""> Java
+                        <input type="checkbox" name="" id=""> Vue.js
+                        <input type="checkbox" name="" id=""> Ruby
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit" id="submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
